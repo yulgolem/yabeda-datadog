@@ -41,6 +41,5 @@ module Yabeda
       Yabeda.register_adapter(:datadog, new)
 
     end
-
   end
 end

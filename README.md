@@ -1,28 +1,29 @@
-# Yabeda::Datadog
+# Yabeda::[Datadog]
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yabeda/datadog`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Adapter for easy exporting collected custom metrics from your application to the [DataDog].
 
 ## Installation
 
-Add this line to your application's Gemfile:
+ 1. [Install and configure official DataDog gem for Ruby](https://github.com/DataDog/dogapi-rb).
 
-```ruby
-gem 'yabeda-datadog'
-```
+ 2. Add this line to your application's Gemfile:
 
-And then execute:
+    ```ruby
+    gem 'yabeda-datadog'
+    ```
 
-    $ bundle
+    And then execute:
 
-Or install it yourself as:
+        $ bundle
 
-    $ gem install yabeda-datadog
+ 3. Your DataDog api key should be in ENV['DATADOG_API_KEY'], application key should go to ENV['DATADOG_APPLICATION_KEY']
+
 
 ## Usage
 
-TODO: Write usage instructions here
+All metrics registered in [Yabeda] will be sent to DataDog.
+
+DataDog currently supports only counters & gauges, no histogram supported.
 
 ## Development
 
