@@ -1,4 +1,4 @@
-# Yabeda::[Datadog]
+# Yabeda::[Datadog](https://www.datadoghq.com/)
 
 Adapter for easy exporting collected custom metrics from your application to the [DataDog].
 
